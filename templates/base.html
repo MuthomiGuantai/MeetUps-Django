@@ -1,0 +1,94 @@
+{% load staticfiles %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Questioner</title>
+    <link rel="stylesheet" href="./static/css/main.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar navbar-primary">
+            <div class="container">
+                <div class="pull-left mobi-hide">
+                    <ul class="nav text-center">
+                        <li>
+                            <a href="#">
+                                <img class="hatch logo" src="./static/images/logo.png" alt="logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <ul class="nav">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'meet_ups' %}">Meetups</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'profile' %}">Profile</a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="text-white floating btn btn-round mt--5 bg-orange">
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ./navbar -->
+        <div class="container">
+            <div class="wrapper">
+                <div class="col-6 mt-100 hatch">
+                    <h1 class="title">Why Crowd-source questions for a meetup?</h1>
+                    <p>
+                       Time is indeed becoming a very limited resurce in organizations today. It is for this reason that the little available time should be well utilized through proper organization for instance through meetings. Among the agents of time saving is Crowd-source questions for a meetup before the actual meetup
+                    </p>
+                    <div class="pull-left pr-15">
+                        <button class="btn btn-primary bg-orange p-15">
+                            How it works
+                        </button>
+                    </div>
+
+                </div>
+                <div class="col-4 pull-right">
+                    <h4 class="text-primary header-title">Join and start contributing</h4>
+                    <form class="form-container" action="questions.html">
+                        <div class="form-group">
+                            <input class="stretchRight input-control" type='text' placeholder="USERNAME">
+                        </div>
+                        <div class="form-group">
+                            <input class="stretchRight input-control" type='email' placeholder="EMAIL">
+                        </div>
+                        <div class="form-group">
+                            <input class="stretchRight input-control" type='password' placeholder="PASSWORD">
+                        </div>
+                        <div class="form-group">
+                            <button onclick="window.location.href='meetups.html'" class="floating btn btn-primary bg-orange p-15 btn-block">
+                                Sign Up
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- ./wrapper -->
+        </div>
+        <!-- ./container -->
+        <footer>
+        <div class="clearfix">
+        <div class="full-span bg-primary p-15 text-center">
+            <div class="mega-text fadeIn">Let us schedule and Participate</div>
+            <p class="fadeIn">
+                Post a meetup, let your audience know about it and ask questions and vote, have a sitting!
+            </p>
+        </div>
+        </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>questioner</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body>
+    <div class="main">
+        <!-- sidebar -->
+        <div class="sidebar col-3 navbar-primary full-height mobi-hide">
+            <!-- logo -->
+            <div>
+                <a href="#">
+                    <img class="fadeIn sidebar__logo-backend" src="../static/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <!-- ./logo -->
+            <div class="sidebar-items">
+                <ul class="sidebar-items__nav nav column">
+                    <li class="sidebar-items__nav--active">
+                        <a class="active-text">
+                            <img class="icon" src="../static/images/question-mark.svg" />
+                            <span class="sidebar-items__text">Questions</span>
+                        </a>                        
+                    </li>
+                    <li class="">
+                        <a>
+                            <img class="icon" src="../static/images/price-tag.svg" />
+                            <span class="sidebar-items__text">Tags</span>
+                        </a>                        
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <img class="icon" src="../static/images/thumbs-up.svg" />
+                            <span class="sidebar-items__text">Post Meetup</span>
+                       </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="icon" src="../static/images/user.svg" />
+                            <span class="sidebar-items__text">Profile</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- ./sidebar -->
+        <div class="body-wrapper col-10 ">
+            <!-- navbar -->
+            <div class="navbar bg-white navbar-primary p-0 navbar-fixed-top">
+                    <div class="container">
+                        <div class="pull-left">
+                            <ul class="nav text-center">
+                                <li>
+                                    <img class="icon" src="../static/images/list.svg" />
+                                </li>
+                                <li>
+                                    <div class="form-group  mobi-hide">
+                                        <img class="icon input-icon" src="../static/images/loupe.svg" />
+                                        <input class="input-control input-icon-group" type='text' placeholder="Search..">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pull-right">
+                            <ul class="nav">
+                                <li>
+                                    <a href="{% url 'home' %}">Home</a>
+                                </li>
+                                <li>                                
+                                    <a href="login.html" class="btn btn-round mt--5 bg-orange">
+                                        Log out
+                                    </a>                                
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <!-- ./navbar -->
+            
+            <!-- list -->
+            <div class="clearfix"></div>
+            <div class="main-wrapper">
+               <div class="container">
+                    <div class="panel bg-white">
+                        <div class="panel__heading bb" >
+                            <div class="mega-text stretchRight">Scheduled Meetups</div>
+                            </div>                       
+                        </div>
+                        <div class="panel__body m-35">
+                            <!-- question -->
+                            <div class="question-list-item">
+                                <div class="col-6">
+                                    <h2>
+                                        <a class="text-primary" href="question_answers.html">
+                                            Bettering HTML/CSS skills to proffesional levels
+                                        </a>
+                                    </h2>
+                                </button>
+                                <button class="btn btn-badge btn-link">
+                                    Post questions
+                                </button>
+                                    <h5 class="text-grey">Added 3 days ago <span class="text-primary"> Simon</span></h5>
+                                </div> 
+                                <!-- right icons  -->
+                                <div class="col-6">
+                                    <h4>&nbsp;</h4>
+                                    <table class="text-center stats-box">
+                                        <tr>
+                                            <td>
+                                                <span class="votes fadeIn">Venue</span>
+                                            </td>
+                                            <td>
+                                                Date
+                                            </td>
+                                            <td>Category</td>
+                                        </tr>
+                                        <tr>
+                                            <td>MKU towers- Nairobi</td>
+                                            <td>23rd Jan 2019</td>
+                                            <td>programming</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!-- ./right icons -->
+                            </div>
+                            <!-- ./question -->
+
+                            <div class="clearfix bb"></div>
+                             <!-- question -->
+                             <div class="question-list-item">
+                                    <div class="col-6">
+                                        <h2 class="text-primary">
+                                            <a class="text-primary" href="question_answers.html">
+                                                Working with routers, Hubs. Fixing and troubleshooting network connections
+                                            </a>
+                                        </h2>
+                                        <button class="btn btn-badge btn-link">
+                                            Post questions
+                                        </button>
+                                        <h5 class="text-grey">Added 5 days ago<span class="text-primary"> Joseph</span></h5>
+                                    </div> 
+                                    <!-- right icons  -->
+                                    <div class="col-6">
+                                        <h4>&nbsp;</h4>
+                                        <table class="text-center stats-box">
+                                                <tr>
+                                                    <td>
+                                                        <span class="votes fadeIn">Venue</span>
+                                                    </td>
+                                                    <td>
+                                                        Date
+                                                    </td>
+                                                    <td>Category</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cisco Offices-Nairobi</td>
+                                                    <td>30th Jan 2019</td>
+                                                    <td>Networking</td>
+                                                </tr>
+                                            </table>
+                                    </div>
+                                    <!-- ./right icons -->
+                                </div>
+                                <!-- ./question -->
+                                <div class="clearfix bb"></div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <!-- ./list -->
+        </div>
+
+    </div>
+</body>
+
+<script src="./js/main.js"></script>
+</html>
